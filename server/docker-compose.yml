@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  my_server:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    networks:
+      - my_network
+      
+networks:
+  my_network:
+    external: true
